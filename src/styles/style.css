@@ -1,0 +1,151 @@
+/* Utility-first CSS for Glass UI */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 16px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#app {
+    width: min(960px, 92vw);
+    padding: 0;
+}
+
+/* Utility-first helpers */
+.u-flex {
+    display: flex;
+}
+
+.u-flex-col {
+    flex-direction: column;
+}
+
+.u-between {
+    justify-content: space-between;
+}
+
+.u-items-center {
+    align-items: center;
+}
+
+.u-gap-8 {
+    gap: 8px;
+}
+
+.u-gap-12 {
+    gap: 12px;
+}
+
+.u-gap-16 {
+    gap: 16px;
+}
+
+.u-mb-12 {
+    margin-bottom: 12px;
+}
+
+.u-mt-8 {
+    margin-top: 8px;
+}
+
+.u-mt-12 {
+    margin-top: 12px;
+}
+
+.u-p-16 {
+    padding: 16px;
+}
+
+.u-text-sm {
+    font-size: 12px;
+}
+
+.u-text-xl {
+    font-size: 20px;
+}
+
+.u-font-600 {
+    font-weight: 600;
+}
+
+.u-font-700 {
+    font-weight: 700;
+}
+
+.u-muted {
+    opacity: 0.75;
+}
+
+/* Glass UI components */
+.glass {
+    background: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    backdrop-filter: blur(14px);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.u-input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 10px;
+    padding: 10px 12px;
+    outline: none;
+}
+
+.u-input:focus {
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.u-textarea {
+    resize: vertical;
+}
+
+.u-btn {
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: rgba(255, 255, 255, 0.45);
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.u-btn:hover {
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.u-btn-primary {
+    border-color: rgba(0, 0, 0, 0.18);
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+}
+
+.u-btn-danger {
+    border-color: rgba(176, 0, 32, 0.35);
+}
+
+.u-chip {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.u-error {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(176, 0, 32, 0.28);
+    background: rgba(176, 0, 32, 0.08);
+}
