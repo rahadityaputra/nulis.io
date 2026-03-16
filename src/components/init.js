@@ -1,11 +1,10 @@
-// Initialize the TaskRenderer
-import { TaskRenderer } from "./TaskRenderer.js";
+import { NoteRenderer } from "./NoteRenderer.js";
 
-const taskRenderer = new TaskRenderer("app");
-window.taskRenderer = taskRenderer;
+const noteRenderer = new NoteRenderer("app");
+window.noteRenderer = noteRenderer;
 
-taskRenderer.init().catch((error) => {
-    console.error("Failed to init TaskRenderer:", error);
+noteRenderer.init().catch((error) => {
+    console.error("Failed to init NoteRenderer:", error);
     const app = document.getElementById("app");
     if (app) {
         app.textContent = `Init error: ${String(error?.message || error)}`;
