@@ -1,5 +1,5 @@
 runtime: nodejs20
-service: default
+service: frontend_nulis_io
 
 automatic_scaling:
   target_cpu_utilization: 0.65
