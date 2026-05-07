@@ -43,7 +43,7 @@ export class NoteRenderer {
             noteElement.className = "note-card";
 
             const createdAtText = note.createdAt
-                ? new Date(note.createdAt).toLocaleString()
+                ? new Date(note.createdAt)
                 : "-";
 
             noteElement.innerHTML = `
